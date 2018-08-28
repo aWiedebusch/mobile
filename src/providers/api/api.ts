@@ -7,7 +7,7 @@ import 'rxjs/add/operator/share';
  */
 @Injectable()
 export class Api {
-  url: string = 'https://example.com/api/v1';
+  url: string = 'http://private-a3046-mobile22.apiary-mock.com';
 
   constructor(public http: HttpClient) {
   }
