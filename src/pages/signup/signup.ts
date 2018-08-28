@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers';
@@ -30,14 +29,13 @@ export class SignupPage {
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService,
     public vendors: Vendors) {
 
     this.vendorList = vendors.query();
 
-    this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
-      this.signupErrorString = value;
-    })
+    // this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
+    //   this.signupErrorString = value;
+    // })
   }
 
   compareFn(e1: Vendor, e2: Vendor): boolean {

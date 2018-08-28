@@ -1,5 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import 'rxjs/add/operator/share';
 
 /**
  * Api is a generic REST Api handler. Set your API url first.
