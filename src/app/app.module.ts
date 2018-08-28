@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { Items } from '../mocks/providers/items';
+import { Vendors } from '../mocks/providers/vendors';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 
@@ -58,6 +59,7 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
+    Vendors,
     User,
     Camera,
     SplashScreen,

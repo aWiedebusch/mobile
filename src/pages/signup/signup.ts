@@ -4,6 +4,8 @@ import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers';
 import { MainPage } from '../';
+import { Vendor } from '../../models/vendor';
+import { Vendors } from '../../providers';
 
 @IonicPage()
 @Component({
@@ -23,14 +25,23 @@ export class SignupPage {
   // Our translated text strings
   private signupErrorString: string;
 
+  vendorList: Vendor[];
+
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    public vendors: Vendors) {
+
+    this.vendorList = vendors.query();
 
     this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
       this.signupErrorString = value;
     })
+  }
+
+  compareFn(e1: Vendor, e2: Vendor): boolean {
+    return e1 && e2 ? e1.name === e2.name : e1 === e2;
   }
 
   doSignup() {

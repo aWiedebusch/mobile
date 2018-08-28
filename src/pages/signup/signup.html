@@ -35,6 +35,13 @@
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
+      <ion-item>
+        <ion-label>Vendor</ion-label>
+        <ion-select [(ngModel)]="vendormodel" [compareWith]="compareFn" name="vendorSelect" multiple="false">
+          <ion-option *ngFor="let v of vendorList" [value]=v >{{v.name}}</ion-option>
+        </ion-select>
+      </ion-item>
+
       <div padding>
         <button ion-button color="primary" block>{{ 'SIGNUP_BUTTON' | translate }}</button>
       </div>
