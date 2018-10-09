@@ -4,9 +4,9 @@
     <ion-title>OUTSTANDING PARTS</ion-title>
 
     <ion-buttons end>
-      <button ion-button icon-only (click)="addItem()">
+      <!-- <button ion-button icon-only (click)="addItem()">
         <ion-icon name="add"></ion-icon>
-      </button>
+      </button> -->
     </ion-buttons>
   </ion-navbar>
 
@@ -18,11 +18,11 @@
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">
         <ion-avatar item-start>
-          <img [src]="item.profilePic" />
+          <img [src]="item.img" />
         </ion-avatar>
         <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+        <p>{{item.order_id}}</p>
+        <ion-note item-end *ngIf="item.note">{{item.price}}</ion-note>
       </button>
 
       <ion-item-options>

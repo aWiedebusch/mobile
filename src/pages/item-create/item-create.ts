@@ -21,7 +21,7 @@ export class ItemCreatePage {
     this.form = formBuilder.group({
       profilePic: [''],
       name: ['', Validators.required],
-      about: ['']
+      price: ['']
     });
 
     // Watch the form for changes, and
@@ -55,14 +55,14 @@ export class ItemCreatePage {
     reader.onload = (readerEvent) => {
 
       let imageData = (readerEvent.target as any).result;
-      this.form.patchValue({ 'profilePic': imageData });
+      this.form.patchValue({ 'img': imageData });
     };
 
     reader.readAsDataURL(event.target.files[0]);
   }
 
   getProfileImageStyle() {
-    return 'url(' + this.form.controls['profilePic'].value + ')'
+    return 'url(' + this.form.controls['img'].value + ')'
   }
 
   /**

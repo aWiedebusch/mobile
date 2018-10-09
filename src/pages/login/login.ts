@@ -24,9 +24,11 @@ export class LoginPage {
     public toastCtrl: ToastController, public storage: Storage) {
 
     //Will have to download the dealership image and logo and set their names.
+    // angular new HttpRequest
 
     //Need save login check.
     //Check for login auth token
+    //auth token generated on backend
 
     this.storage.get( 'dealer' ).then((dealer_value) => 
       {

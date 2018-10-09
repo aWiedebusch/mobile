@@ -14,47 +14,47 @@ export class Items {
 
 
   constructor() {
-    let items = [
-      {
-        "name": "Part 1",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 1 description"
-      },
-      {
-        "name": "Part 2",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 2 description"
-      },
-      {
-        "name": "Part 3",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 3 description"
-      },
-      {
-        "name": "Part 4",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 4 description"
-      },
-      {
-        "name": "Part 5",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 5 description"
-      },
-      {
-        "name": "Part 6",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 6 description"
-      },
-      {
-        "name": "Part 7",
-        "profilePic": "assets/img/parts/Jeff2.png",
-        "about": "Part 7 description"
-      }
-    ];
+  //   let items = [
+  //     {
+  //       "name": "Part 1",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 1 description"
+  //     },
+  //     {
+  //       "name": "Part 2",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 2 description"
+  //     },
+  //     {
+  //       "name": "Part 3",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 3 description"
+  //     },
+  //     {
+  //       "name": "Part 4",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 4 description"
+  //     },
+  //     {
+  //       "name": "Part 5",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 5 description"
+  //     },
+  //     {
+  //       "name": "Part 6",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 6 description"
+  //     },
+  //     {
+  //       "name": "Part 7",
+  //       "profilePic": "assets/img/parts/Jeff2.png",
+  //       "about": "Part 7 description"
+  //     }
+  //   ];
 
-    for (let item of items) {
-      this.items.push(new Item(item));
-    }
+  //   for (let item of items) {
+  //     this.items.push(new Item(item));
+  //   }
   }
 
   query(params?: any) {
