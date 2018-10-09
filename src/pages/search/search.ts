@@ -11,7 +11,7 @@ import { Items } from '../../providers';
 })
 export class SearchPage {
 
-  currentItems: any = [];
+  currentItems: Item[] = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public items: Items) { }
 
@@ -24,9 +24,15 @@ export class SearchPage {
       this.currentItems = [];
       return;
     }
-    this.currentItems = this.items.query({
-      name: val
+    this.items.query(val).subscribe((resp :any) => {
+      this.currentItems = resp.filter((item) => {
+        if( item.name.indexOf(val) >= 0 ) {
+          return true;
+        }
+        return false;
+      });
     });
+    return this.currentItems;
   }
 
   /**

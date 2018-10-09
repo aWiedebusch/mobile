@@ -15,13 +15,13 @@ export class Items {
 
     seq.subscribe(( res: any) => {
       for ( let i of res) {
-        itemsList.push(new Item(i.name, i.order_id, i.price, i.order_date, i.delivery_date, i.img));
+          itemsList.push(new Item(i.name, i.order_id, i.price, i.order_date, i.delivery_date, i.img));
       }
     }, err => {
       console.error('ERROR', err);
     });
 
-    return itemsList;
+    return seq;
   }
 
   add(item: Item) {
