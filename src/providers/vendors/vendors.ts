@@ -9,7 +9,18 @@ export class Vendors {
   constructor(public api: Api) { }
 
   query(params?: any) {
-    return this.api.get('/vendors', params);
+    let seq =  this.api.get('vendors', params).share();
+    var vendorList: Vendor[] = [];
+
+    seq.subscribe(( res: any) => {
+      for ( let v of res) {
+        vendorList.push(new Vendor(v.name, v.location, ""));
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
+
+    return vendorList;
   }
 
   add(vendor: Vendor) {

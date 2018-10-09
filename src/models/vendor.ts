@@ -9,12 +9,10 @@
  */
 export class Vendor {
 
-    constructor(object: Vendor) {
-      // Quick and dirty extend/assign fields to this model
-      for (const f in object) {
-        // @ts-ignore
-        this[f] = object[f];
-      }
+    constructor(name: string, location: string, dBaseURL: string) {
+      this.name = name;
+      this.location = location;
+      this.dBaseURL = dBaseURL;
     }
   
   }

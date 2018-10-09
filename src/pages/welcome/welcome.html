@@ -1,13 +1,13 @@
 <ion-content class="no-scroll">
-  <div class="splash-bg"></div>
+  <div class="splash-bg" [ngStyle]="{'background-image': 'url(' + [bg_url] + ')'}"></div>
   <div class="splash-info">
-    <div class="splash-logo"></div>
+    <div class="splash-logo" [ngStyle]="{'background-image': 'url(' + [logo] + ')'}"></div>
     <div class="splash-intro">
       HBS Systems Mobile
     </div>
   </div>
   <div padding>
-    <button ion-button block (click)="signup()">SIGN UP</button>
+    <!-- <button ion-button block (click)="signup()">SIGN UP</button> -->
     <button ion-button block (click)="login()" class="login">LOGIN</button>
   </div>
 </ion-content>

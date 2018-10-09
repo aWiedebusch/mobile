@@ -7,48 +7,48 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Burt is a Bear.",
+    "name": "Part example",
+    "profilePic": "assets/img/parts/Jeff2.png",
+    "about": "Part description",
   };
 
 
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "name": "Part 1",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 1 description"
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "name": "Part 2",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 2 description"
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "name": "Part 3",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 3 description"
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "name": "Part 4",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 4 description"
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "name": "Part 5",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 5 description"
       },
       {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "name": "Part 6",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 6 description"
       },
       {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "name": "Part 7",
+        "profilePic": "assets/img/parts/Jeff2.png",
+        "about": "Part 7 description"
       }
     ];
 

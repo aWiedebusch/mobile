@@ -14,27 +14,27 @@ export class Vendors {
 
 
   constructor() {
-    let vendors = [
-      {
-        "name": "Vendor1",
-        "location": "Here",
-        "dBaseURL": "/thisURL",
-      },
-      {
-        "name": "Vendor2",
-        "location": "There",
-        "dBaseURL": "/thatURL",
-      },
-      {
-        "name": "Vendor3",
-        "location": "Weast",
-        "dBaseURL": "/weastURL",
-      }
-    ];
+    // let vendors = [
+    //   {
+    //     "name": "Vendor1",
+    //     "location": "Here",
+    //     "dBaseURL": "/thisURL",
+    //   },
+    //   {
+    //     "name": "Vendor2",
+    //     "location": "There",
+    //     "dBaseURL": "/thatURL",
+    //   },
+    //   {
+    //     "name": "Vendor3",
+    //     "location": "Weast",
+    //     "dBaseURL": "/weastURL",
+    //   }
+    // ];
 
-    for (let vendor of vendors) {
-      this.vendors.push(new Vendor(vendor));
-    }
+    // for (let vendor of vendors) {
+    //   this.vendors.push(new Vendor(vendor));
+    // }
   }
 
   query(params?: any) {

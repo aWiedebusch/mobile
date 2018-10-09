@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ 'SIGNUP_TITLE' }}</ion-title>
+    <ion-title>SIGNUP</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -12,13 +12,13 @@
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>{{ 'NAME' }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+        <ion-label fixed>NAME</ion-label>
+        <ion-input type="text" [(ngModel)]="account.name" name="name" placeholder="John"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+        <ion-label fixed>EMAIL</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email" placeholder="john@email.com"></ion-input>
       </ion-item>
 
       <!--
@@ -31,19 +31,19 @@
       -->
 
       <ion-item>
-        <ion-label fixed>{{ 'PASSWORD' }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+        <ion-label fixed>PASSWORD</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="••••••••"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label>Vendor</ion-label>
-        <ion-select [(ngModel)]="vendormodel" [compareWith]="compareFn" name="vendorSelect" multiple="false">
+        <ion-label fixed>VENDOR</ion-label>
+        <ion-select [(ngModel)]="vendormodel" [compareWith]="compareFn" name="vendorSelect" id="signupVendors" multiple="false" placeholder="Joe's Rentals">
           <ion-option *ngFor="let v of vendorList" [value]=v >{{v.name}}</ion-option>
         </ion-select>
       </ion-item>
 
       <div padding>
-        <button ion-button color="primary" block>{{ 'SIGNUP' }}</button>
+        <button ion-button color="primary" block>SIGNUP</button>
       </div>
 
     </ion-list>

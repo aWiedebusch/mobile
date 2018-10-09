@@ -9,7 +9,19 @@ export class Items {
   constructor(public api: Api) { }
 
   query(params?: any) {
-    return this.api.get('/items', params);
+    let seq =  this.api.get('orders', params).share();
+
+    seq.subscribe(( res: any) => {
+      if( res.status == 'success') {
+
+      } else {
+
+      }
+    }, err => {
+      console.error('ERROR', err);
+    });
+
+    return seq;
   }
 
   add(item: Item) {

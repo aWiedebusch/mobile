@@ -16,9 +16,9 @@ export class SignupPage {
   // If you're using the username field with or without email, make
   // sure to add it to the type
   account: { name: string, email: string, password: string } = {
-    name: 'Test Human',
-    email: 'test@example.com',
-    password: 'test'
+    name: '',
+    email: '',
+    password: ''
   };
 
   // Our translated text strings
@@ -32,10 +32,6 @@ export class SignupPage {
     public vendors: Vendors) {
 
     this.vendorList = vendors.query();
-
-    // this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
-    //   this.signupErrorString = value;
-    // })
   }
 
   compareFn(e1: Vendor, e2: Vendor): boolean {

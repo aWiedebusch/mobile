@@ -14,13 +14,21 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController) { }
+  bg_url: string;
+  logo: string;
+
+  constructor(public navCtrl: NavController) { 
+    //Can put dealership check for splash bg and icon here
+    //Use local storage after login to set url.
+    this.bg_url = "../assets/imgs/hbs_people.jpg";
+    this.logo = "../assets/imgs/hbs_logo.png";
+  }
 
   login() {
     this.navCtrl.push('LoginPage');
   }
 
-  signup() {
-    this.navCtrl.push('SignupPage');
-  }
+  // signup() {
+  //   this.navCtrl.push('SignupPage');
+  // }
 }
